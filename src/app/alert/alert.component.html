@@ -1,0 +1,42 @@
+<div >
+    <h2>Alert Component</h2>
+    <mat-tab-group mat-align-tabs="start">
+      <mat-tab label="Overview">
+        <div class="content">
+          <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+          <edge-alert
+        headertitle="Record alert notification alert..."
+      >
+      </edge-alert>
+        </div>
+      </mat-tab>
+      <mat-tab label="Usage">
+        <div class="content">
+            <h4>How to use</h4>
+            <p>Use the below custom element tag and properties</p>
+            <div class="code-snippet">
+    <button [cdkCopyToClipboard]="dynamicText()"><mat-icon>content_copy</mat-icon></button>
+    <pre class="content" id="content">    
+    <code >
+    {{value}} 
+    </code>
+    </pre>
+    </div><p>Use the below custom attribute accordingly</p>
+            <ul>
+                <li>headertitle - text whinh needs to be shown</li>
+                <li>class - values like primary,sucess,danger for styles for typo and background</li>
+            </ul>
+        </div>
+    </mat-tab>
+      <mat-tab label="Examples">
+        <div class="content"><edge-alert headertitle="Info Notification Alert.." class="primary"></edge-alert>
+      <edge-alert
+        headertitle="Success record alert notification alert..."
+        class="success"
+      >
+      </edge-alert>
+      <edge-alert headertitle="Danger record alert notification alert..." class="danger">
+      </edge-alert></div></mat-tab>
+    </mat-tab-group>
+      
+    </div>

@@ -1,0 +1,43 @@
+<h2>Card Component</h2>
+<mat-tab-group>
+  <mat-tab label="Overview"> 
+    <div class="content">
+    <p>Card component is a content container for text, photos, and actions in the context of a single subject</p> <br>
+    <edge-card
+  firstname="Stencil"
+  lastname="Js"
+  avatar=""
+  description="Compiler tool"
+></edge-card>
+</div>
+  </mat-tab>
+  <mat-tab label="Usage">
+    <div class="content">
+        <h4>How to use</h4>
+        <p>Use the below custom element tag and properties</p>
+        <div class="code-snippet">
+<button [cdkCopyToClipboard]="dynamicText()"><mat-icon>content_copy</mat-icon></button>
+<pre class="content" id="content">    
+<code >
+  {{value}}   
+</code>
+</pre>
+</div><p>Use the below custom attribute accordingly</p>
+        <ul>
+            <li>firstname - string as an input to represent the name</li>
+            <li>avatar  - a path of image as an input to show the photo need a path of image</li>
+            <li>description - string as an input to represent the description of the card</li>
+        </ul>
+    </div>
+</mat-tab>
+          <mat-tab label="Examples"> 
+            <div class="content">
+<edge-card
+  firstname="Stencil"
+  lastname="Js"
+  avatar="https://mdbootstrap.com/img/Photos/Avatars/img%20%2831%29.jpg"
+  description="'Don't call me a framework' JS"
+></edge-card>
+</div>
+</mat-tab>
+</mat-tab-group>

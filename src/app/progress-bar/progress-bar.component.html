@@ -1,0 +1,53 @@
+<div class="progressBar-comp">
+    <h2>Progress Bar Component</h2>
+    <mat-tab-group>
+        <mat-tab label="Overview">
+            <div class="content">
+                <p>Horizontal progress-bar for indicating progress and activity.</p>
+            </div>
+            <div>
+                <h4>Determinate Progress bar</h4>
+                <p>Determinate
+                    Operations where the percentage of the operation complete is known should use the determinate indicator.</p>
+                <edge-progress-bar color="success" value="0.4" dlabel="40%"
+                class="determinate-progress progress-bar-success"></edge-progress-bar>
+            </div>
+            <div>
+                <h4>Indeterminate Progress bar</h4>
+                <p>Operations where the user is asked to wait while something finishes and it’s not necessary to indicate how long it will take should use the indeterminate indicator.</p>
+                <edge-progress-bar class="indeterminate-progress"></edge-progress-bar>
+            </div>
+        </mat-tab>
+        <mat-tab label="Usage">
+            <div class="content">
+                <h4>How to use</h4>
+                <p>Use the below custom element tag and properties</p>
+                <div class="code-snippet">
+      <button [cdkCopyToClipboard]="dynamicText()"><mat-icon>content_copy</mat-icon></button>
+      <pre class="content" id="content">    
+      <code>
+    {{value}}       </code>
+    </pre>
+    </div> <p>Use the below custom attribute accordingly</p>
+                <ul>
+                    <li>value - to represent the Value of the progress bar</li>
+                    <li>label  - to show in progress bar as value</li>
+                    <li>class - for fill colors and styles</li>
+                </ul>
+            </div>
+        </mat-tab>
+        <mat-tab label="Examples">
+            <div>
+            <edge-progress-bar value="0.3" label="30%" class="determinate-progress " ></edge-progress-bar></div>
+            <div><edge-progress-bar color="success" value="0.4" dlabel="40%"
+                class="determinate-progress progress-bar-success"></edge-progress-bar></div>
+                <div><edge-progress-bar color="info" value="0.5" dlabel="50%" class="determinate-progress progress-bar-info">
+            </edge-progress-bar></div>
+            <div><edge-progress-bar color="warning" value="0.6" dlabel="60%"
+                class="determinate-progress progress-bar-warning"></edge-progress-bar></div>
+                <div><edge-progress-bar color="danger" value="0.7" dlabel="70%" class="determinate-progress progress-bar-danger">
+            </edge-progress-bar></div>
+            <div><edge-progress-bar class="indeterminate-progress"></edge-progress-bar></div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

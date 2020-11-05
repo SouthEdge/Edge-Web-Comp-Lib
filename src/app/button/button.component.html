@@ -1,0 +1,100 @@
+<div class="container">
+    <h2>Button Component</h2>
+    <mat-tab-group>
+<mat-tab label="Overview"> 
+  <div class="content">
+  <p>Edge-button is a component used to implement the button with different types of futures and decoration in any framework</p>
+  <h3>Button types</h3>
+      <edge-button class="btn btn-default btn-wd" title="Default"></edge-button>
+      <edge-button class="btn btn-info btn-wd" title="Info"></edge-button>
+      <edge-button class="btn btn-fill btn-wd btn-round" title="Fill + Round"></edge-button>
+      <edge-button class="btn btn-default btn-fill btn-sm" title="Small"></edge-button>
+    </div>
+    </mat-tab>
+      <mat-tab label="Usage">
+        <div class="content">
+            <h4>How to use</h4>
+            <p>Use the below custom element tag</p>
+            <div class="code-snippet">
+    <button [cdkCopyToClipboard]="dynamicText()"><mat-icon>content_copy</mat-icon></button>
+    <pre class="content" id="content">    
+    <code>
+    {{value}}     </code>
+    </pre>
+    </div>
+    <p>Use the below custom attribute accordingly</p>
+                Basic 
+                <ul>
+                <li>btn - display the default butten with default title(submit) and border</li>
+                <li>btn-default - grey color background</li>
+              </ul>
+                Colors :
+                <ul>
+                <li>btn-primary - blue color background</li>
+                <li>btn-success - green color background</li>
+                <li>btn-warning - yellow color background</li>
+                <li>btn-danger - red color background</li>
+                <li>btn-info - blue color background</li>
+              </ul>
+                Size :
+                <ul>
+                <li>btn-wd - button width will be 140px</li>
+                <li>btn-fill - filled with dark grey color</li>
+                <li>btn-lg - large size button</li>
+                <li>btn-sm - small size button</li>
+                <li>btn-xs - very small size button</li>
+                <li>btn-round - round cornor button</li>
+                <li>btn-xs - very small size button</li>
+              </ul>
+                Styles :
+                <ul>
+                <li>btn-simple - simple button with border and color</li>
+                <li>btn-outline-default - grey color outline</li>
+                <li>btn-outline-primary - blue color outline</li>
+                <li>btn-outline-success - green color outline</li>
+                <li>btn-outline-warning - yellow color outline</li>
+                <li>btn-outline-danger- red color outline</li>
+                <li>btn-outline-info- blue color outline</li>
+              </ul>
+        </div>
+    </mat-tab>
+        <mat-tab label="Examples"> 
+    Colors :
+    <div class="content" id="content">     
+      <edge-button class="btn btn-default btn-wd" title="Default"></edge-button>
+      <edge-button class="btn btn-primary btn-wd" title="Primary"></edge-button>
+      <edge-button class="btn btn-success btn-wd" title="Success"></edge-button>
+      <edge-button class="btn btn-warning btn-wd" title="Warning"></edge-button>
+      <edge-button class="btn btn-danger btn-wd" title="Danger"></edge-button>
+      <edge-button class="btn btn-info btn-wd" title="Info"></edge-button>
+    </div>
+
+    Size :
+    <div class="content">
+      <edge-button class="btn btn-default btn-fill btn-lg" title="Large"></edge-button>
+      <edge-button class="btn btn-default btn-fill" title="Default"></edge-button>
+      <edge-button class="btn btn-default btn-fill btn-sm" title="Small"></edge-button>
+      <edge-button class="btn btn-default btn-fill btn-xs" title="X-Small"></edge-button>
+    </div>
+
+    Styles :
+    <div class="content">
+      <edge-button class="btn btn-default btn-wd" title="Default"></edge-button>
+      <edge-button class="btn btn-fill btn-wd" title="Fill"></edge-button>
+      <edge-button class="btn btn-fill btn-wd btn-round" title="Fill + Round"></edge-button>
+      <edge-button class="btn btn-default btn-wd btn-round" title="Round"></edge-button>
+      <edge-button class="btn btn-simple btn-wd btn-default" title="Simple"></edge-button>
+    </div>
+
+    Outline Buttons :
+    <div class="content">
+      <edge-button class="btn btn-outline-default btn-wd" title="Default"></edge-button>
+      <edge-button class="btn btn-outline-primary btn-wd" title="Primary"></edge-button>
+      <edge-button class="btn btn-outline-success btn-wd" title="Success"></edge-button>
+      <edge-button class="btn btn-outline-warning btn-wd" title="Warning"></edge-button>
+      <edge-button class="btn btn-outline-danger btn-wd" title="Danger"></edge-button>
+      <edge-button class="btn btn-outline-info btn-wd" title="Info"></edge-button>
+    </div>
+</mat-tab>
+</mat-tab-group>
+  </div>

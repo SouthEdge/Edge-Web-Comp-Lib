@@ -1,0 +1,31 @@
+<nav class="navbar-header">
+  <p><a routerLink="/"><span class="header">Edge Web Component Library</span></a></p>
+</nav>
+
+<!-- <mat-toolbar>
+<span mat-icon-button >
+  <mat-icon>menu</mat-icon> 
+  Components
+</span> <button mat-icon-button routerLink="/" aria-label="Home">Home</button> 
+</mat-toolbar>-->
+<mat-sidenav-container class="comp-list">
+<mat-sidenav #sidenav mode="side" opened="true">
+  <!-- <span mat-icon-button >
+    Components
+  </span>  -->
+  <mat-nav-list>
+    <a
+      *ngFor="let route of routes"
+      mat-list-item
+      [routerLink]="route.path"
+    >
+      {{ route.label }}</a
+    >
+  </mat-nav-list>
+</mat-sidenav>
+<mat-sidenav-content>
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-content>
+</mat-sidenav-container>
